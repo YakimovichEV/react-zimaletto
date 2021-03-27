@@ -1,0 +1,22 @@
+@import "./variables.scss";
+
+.page-content {
+    padding: 45px 0 60px;
+
+    h1 {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        color: #000;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 26px;
+        color: #828282;
+        margin-bottom: 50px;
+    }
+}

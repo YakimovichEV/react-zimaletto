@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.menu__item-top {
+    input[type="text"] {
+        padding-left: 10px;
+        width: 632px;
+        height: 40px;
+        background: #ffffff;
+        border: 1px solid #ebebeb;
+        box-sizing: border-box;
+        border-radius: 10px;
+        outline: none;
+        margin-bottom: 20px;
+    }
+
+    .select {
+        select {
+            width: 517px;
+            height: 40px;
+            background: #ffffff;
+            border: 1px solid #ebebeb;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: #a6a6a6;
+            padding-left: 10px;
+            &:focus {
+                border: 1px solid #ff4d42;
+                outline: none;
+            }
+
+            option {
+                padding-left: 10px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 18px;
+                color: #a6a6a6;
+            }
+        }
+    }
+
+    .btn {
+        button {
+            margin-left: 10px;
+            cursor: pointer;
+            width: 101px;
+            height: 40px;
+            background: #ebebeb;
+            border-radius: 10px;
+            border: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 18px;
+            color: #a6a6a6;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .input {
+        .btn-big {
+            cursor: pointer;
+            width: 146px;
+            height: 40px;
+            background: #ebebeb;
+            border-radius: 10px;
+            border: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 18px;
+            color: #a6a6a6;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    textarea {
+        margin: 20px 0;
+        width: 632px;
+        height: 112px;
+        background: #ffffff;
+        border: 1px solid #ebebeb;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        &:focus {
+            outline: none;
+        }
+
+        .textarea {
+            padding: 10px 0 0 10px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 18px;
+            color: #c4c4c4;
+        }
+    }
+
+    .price {
+        input {
+            width: 309px !important;
+            height: 40px;
+            background: #ffffff;
+            border: 1px solid #ebebeb;
+            box-sizing: border-box;
+            border-radius: 10px;
+
+            &:first-child {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.menu__item-bottom {
+    margin-top: 30px;
+
+    .btn-left {
+        margin-right: 10px;
+        cursor: pointer;
+        width: 309px;
+        height: 49px;
+        background: #0094ff;
+        border-radius: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #ffffff;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .btn-right {
+        cursor: pointer;
+        width: 309px;
+        height: 49px;
+        background: #ebebeb;
+        border-radius: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #a6a6a6;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

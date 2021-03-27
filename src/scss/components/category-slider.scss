@@ -1,0 +1,54 @@
+@import "./variables.scss";
+
+.home-menu {
+    .container {
+        .swiper-button-next:after,
+        .swiper-container-rtl .swiper-button-prev:after {
+            content: "";
+            background-image: url(../../assets/img/right-arrow.svg);
+            width: 14px;
+            height: 24px;
+        }
+
+        .swiper-button-prev {
+            display: none;
+        }
+
+        .swiper-button-prev,
+        .swiper-container-rtl .swiper-button-next {
+            left: 0;
+        }
+
+        .swiper-button-next,
+        .swiper-container-rtl .swiper-button-prev {
+            right: 0;
+            justify-content: flex-end;
+            background: #fff;
+        }
+
+        .swiper-button-next.swiper-button-disabled,
+        .swiper-button-prev.swiper-button-disabled {
+            display: none;
+        }
+
+        .swiper-container-menu {
+            position: relative;
+            overflow: hidden;
+
+            a {
+                font-size: 23px;
+                line-height: 27px;
+                color: #4f4f4f;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: auto !important;
+
+                &.active {
+                    font-weight: 700;
+                    color: $primary-color;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

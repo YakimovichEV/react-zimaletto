@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.swiper-pagination-bullet {
+    cursor: pointer;
+    background: #c4c4c4 !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    cursor: pointer;
+    background: #fff !important;
+    opacity: 1 !important;
+}
+
+/* Imports */
+
+/* Client side */
+@import "./components/variables.scss";
+@import "./components/btn.scss";
+@import "./components/header.scss";
+@import "./components/banner.scss";
+@import "./components/category-slider.scss";
+@import "./components/products.scss";
+@import "./components/payment&delivery.scss";
+@import "./components/cart.scss";
+@import "./components/cart-product.scss";
+@import "./components/footer.scss";
+@import "./components/modal-windows.scss";
+
+/* Admin panel */
+@import "./components/order.scss";
+@import "./components/order-details.scss";
+@import "./components/admin-product.scss";
+@import "./components/admin-login.scss";
+@import "./components/admin-add-product.scss";

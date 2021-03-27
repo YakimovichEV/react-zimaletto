@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.menu {
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+
+        .menu__left {
+            display: block;
+            width: 45%;
+
+            h3 {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                color: #1d1d1d;
+            }
+
+            input {
+                padding-left: 10px;
+                margin: 20px 0;
+                width: 550px;
+                height: 50px;
+                background: #f8f6f5;
+                border: 1px solid #ebebeb;
+                box-sizing: border-box;
+                border-radius: 10px;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::-webkit-input-placeholder {
+                    color: #1d1d1d;
+                    font-size: 16px;
+                }
+            }
+
+            &__input {
+                input {
+                    width: 550px;
+                    height: 50px;
+                    background: #58ba87;
+                    border: 1px solid #58ba87;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .menu__right {
+            width: 35%;
+
+            h3 {
+                margin-bottom: 35px;
+            }
+
+            .menu__order {
+                display: flex;
+                margin-bottom: 25px;
+
+                .order__img {
+                    margin-right: 25px;
+                    width: 100px;
+                    height: 134px;
+                }
+
+                .menu__title {
+                    margin-bottom: 10px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 1px;
+                    color: #bb2a36;
+                    text-transform: uppercase;
+                }
+
+                .menu__price {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 18px;
+                    display: flex;
+                    align-items: center;
+                    color: #101010;
+                }
+            }
+
+            .menu__datetime {
+                margin-bottom: 10px;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            .menu__sum {
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

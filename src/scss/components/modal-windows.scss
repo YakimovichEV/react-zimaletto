@@ -1,0 +1,312 @@
+@import "./variables.scss";
+
+.modal-dialog {
+    background: #fff;
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.12);
+    border-radius: 17px;
+    max-width: 420px;
+
+    .modal-content {
+        position: relative;
+        padding: 30px 42px 34px;
+        border: none;
+
+        .modal-body {
+            padding: 0;
+
+            .rev-top {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 29px;
+                color: #000;
+                margin-bottom: 16px;
+            }
+        }
+
+        .close {
+            color: $primary-color;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+
+        .top-modal {
+            text-align: center;
+            margin-bottom: 10px;
+
+            .modal-name {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                color: #000;
+                margin-top: 14px;
+            }
+        }
+
+        .form {
+            .line-rev {
+                display: flex;
+                align-items: center;
+
+                &:last-of-type {
+                    align-items: flex-start;
+
+                    b {
+                        width: 92px !important;
+                    }
+                }
+
+                .rating {
+                    span {
+                        background: url(../../assets/img/empty-star.svg);
+                        width: 13px;
+                        height: 13px;
+                        display: inline-block;
+
+                        &.active {
+                            background: url(../../assets/img/star.svg);
+                        }
+                    }
+                }
+
+                b {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 11px;
+                    line-height: 12px;
+                    color: #000;
+                    width: 80px !important;
+                }
+
+                input {
+                    width: 177px !important;
+                    height: 33px !important;
+                    line-height: 33px !important;
+                    padding-left: 17px !important;
+                }
+
+                textarea {
+                    width: 245px;
+                    height: 100px;
+                    padding-left: 17px;
+                    border: 1px solid #ebebeb;
+                }
+            }
+
+            button {
+                border: none;
+                height: 45px;
+                background: $primary-color;
+                border-radius: 6px;
+                padding: 0 20px;
+                min-width: 143px;
+                box-sizing: border-box;
+                font-size: 14px;
+                line-height: 45px;
+                text-align: center;
+                color: #fff;
+                display: block;
+                margin: 12px auto;
+            }
+
+            .modal-txt {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+                color: #000;
+                margin-top: 12px;
+
+                span {
+                    color: $primary-color;
+                    cursor: pointer;
+                }
+            }
+
+            .forgot_pass {
+                font-size: 14px;
+                line-height: 17px;
+                text-decoration-line: underline;
+                color: $primary-color;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .send-check {
+                text-align: center;
+
+                &.active {
+                    button {
+                        background: $primary-color;
+                    }
+
+                    span {
+                        color: $primary-color;
+                    }
+
+                    b {
+                        display: none;
+                    }
+                }
+
+                span {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-align: center;
+                    text-decoration-line: underline;
+                    color: #bdbdbd;
+                }
+
+                b {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: #000;
+                    margin-left: 10px;
+                }
+
+                button {
+                    margin-top: 30px;
+                    background: #e0e0e0;
+                }
+            }
+
+            .btn-block-2 {
+                display: flex;
+                justify-content: center;
+
+                .decline {
+                    background: none;
+                    color: $primary-color;
+                    cursor: pointer;
+                }
+            }
+
+            .inpb {
+                input {
+                    width: 100%;
+                    height: 50px;
+                    background: #fcfcfc;
+                    border: 1px solid #ebebeb;
+                    box-sizing: border-box;
+                    border-radius: 6px;
+                    padding: 0 20px 0 49px;
+                    font-size: 12px;
+                    line-height: 20px;
+                    text-align: left;
+                    color: #c6c6c6;
+                    margin: 14px 0;
+                    background-repeat: no-repeat;
+                    background-position: 18px center;
+
+                    &.phone {
+                        background-image: url(../../assets/img/login-phone.svg);
+                    }
+
+                    &.pass {
+                        background-image: url(../../assets/img/login-password.svg);
+                    }
+
+                    &.mail {
+                        background-image: url(../../assets/img/email-input.svg);
+                    }
+                }
+
+                &.digit {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 200px;
+                    margin: 0 auto;
+
+                    input {
+                        width: 33px;
+                        height: 47px;
+                        background: #fcfcfc;
+                        border: 1px solid #ebebeb;
+                        box-sizing: border-box;
+                        border-radius: 5px;
+                        font-size: 24px;
+                        line-height: 16px;
+                        text-align: center;
+                        color: #000;
+                        padding: 0;
+                    }
+
+                    span {
+                        width: 7px;
+                        height: 1px;
+                        background: #343e48;
+                        margin: 0 6px;
+                    }
+                }
+            }
+
+            .error-txt {
+                font-size: 10px;
+                line-height: 11px;
+                text-align: center;
+                color: #eb5757;
+                margin-bottom: 14px;
+            }
+
+            .check-block {
+                margin-bottom: 38px;
+
+                .line {
+                    display: flex;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 11px;
+                    line-height: 14px;
+                    text-align: center;
+                    color: #c6c6c6;
+                    margin-bottom: 15px;
+
+                    input {
+                        position: relative;
+                        display: none;
+
+                        &:checked {
+                            ~ label {
+                                &:before {
+                                    background: $primary-color;
+                                    border: 2px solid #fcfcfc;
+                                }
+                            }
+                        }
+
+                        ~ label {
+                            position: relative;
+                            margin-left: 30px;
+                            text-align: left;
+                            margin-bottom: 0;
+
+                            a {
+                                color: $primary-color;
+                            }
+
+                            &:before {
+                                content: "";
+                                border-radius: 50%;
+                                width: 15px;
+                                height: 15px;
+                                background: #fcfcfc;
+                                border: 2px solid #ebebeb;
+                                box-sizing: border-box;
+                                position: absolute;
+                                top: 0;
+                                left: -30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
