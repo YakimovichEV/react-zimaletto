@@ -13,9 +13,16 @@ body {
     color: #000;
 }
 
+.wrapper {
+    height: calc(100vw - 100px);
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
 .container {
     width: 100%;
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 

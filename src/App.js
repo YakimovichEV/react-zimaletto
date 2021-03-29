@@ -7,7 +7,7 @@ import { Home } from "./pages/Home";
 
 function App() {
     return (
-        <div className="container">
+        <div className="wrapper">
             <Header />
             <div className="content">
                 <Route path="/" component={Home} exact />
