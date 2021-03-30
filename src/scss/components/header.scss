@@ -33,7 +33,7 @@
                     text-decoration: none;
 
                     &:hover {
-                        color: $primary-color;
+                        color: $green;
                     }
                 }
             }
@@ -41,6 +41,8 @@
     }
 
     &__logo {
+        cursor: pointer;
+
         img {
             margin-right: 20px;
             width: 60px;
@@ -68,5 +70,10 @@
 
     &__user {
         margin-right: 30px;
+        cursor: pointer;
+    }
+
+    &__cart {
+        cursor: pointer;
     }
 }
