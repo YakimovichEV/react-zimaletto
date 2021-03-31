@@ -12,7 +12,7 @@ const ImageSlider = ({ slides }) => {
     };
 
     const prevSlide = () => {
-        setCurrent(current === length - 1 ? 0 : current - 1);
+        setCurrent(current === 0 ? length - 1 : current - 1);
     };
 
     if (!Array.isArray(slides) || slides.length <= 0) {
@@ -21,9 +21,12 @@ const ImageSlider = ({ slides }) => {
 
     return (
         <section className="slider">
-            <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+            <FaArrowAltCircleLeft
+                className="slider__left-arrow"
+                onClick={prevSlide}
+            />
             <FaArrowAltCircleRight
-                className="right-arrow"
+                className="slider__right-arrow"
                 onClick={nextSlide}
             />
             {SliderData.map((slide, index) => {
