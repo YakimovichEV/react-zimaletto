@@ -1,0 +1,121 @@
+@import "./variables.scss";
+
+.footer {
+    background: $green;
+    padding: 34px 0;
+    color: #fff;
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        .phones {
+            display: flex;
+            justify-content: space-between;
+
+            .phone-item {
+                display: flex;
+                flex-direction: column;
+                margin-right: 60px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                span {
+                    font-size: 12px;
+                    line-height: 32px;
+                }
+
+                a {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 39px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .work-time {
+            font-size: 15px;
+            line-height: 32px;
+            margin: 10px 0;
+        }
+
+        .work-email {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                font-size: 18px;
+                line-height: 32px;
+            }
+
+            a.site-help {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                text-decoration-line: underline;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    &__center {
+        .social {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 32px;
+                letter-spacing: 3px;
+                font-variant: small-caps;
+                text-transform: uppercase;
+                margin-bottom: 26px;
+            }
+        }
+    }
+
+    &__right {
+        .person {
+            a {
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 32px;
+
+                img {
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 9px;
+        font-size: 12px;
+        line-height: 32px;
+
+        a {
+            font-size: 12px;
+            line-height: 32px;
+            margin-left: 33px;
+        }
+    }
+}
