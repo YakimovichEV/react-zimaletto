@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import headerLogo from "../../assets/img/logo.svg";
 import headerPhone from "../../assets/img/phone.svg";
@@ -11,17 +12,23 @@ export const Header = () => {
             <div className="container">
                 <div className="header__inner">
                     <div className="header__item">
-                        <div className="header__logo">
-                            <img src={headerLogo} alt="" />
-                        </div>
+                        <Link to="/">
+                            <div className="header__logo">
+                                <img src={headerLogo} alt="" />
+                            </div>
+                        </Link>
                         <nav className="header__menu">
                             <ul>
-                                <li>
-                                    <a href="">Каталог</a>
-                                </li>
-                                <li>
-                                    <a href="">Доставка</a>
-                                </li>
+                                <Link to="/">
+                                    <li>
+                                        <a href="">Каталог</a>
+                                    </li>
+                                </Link>
+                                <Link to="/delivery">
+                                    <li>
+                                        <a href="">Доставка</a>
+                                    </li>
+                                </Link>
                                 <li>
                                     <a href="">Оплата</a>
                                 </li>
