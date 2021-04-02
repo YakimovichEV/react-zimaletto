@@ -13,13 +13,6 @@ body {
     color: #000;
 }
 
-.wrapper {
-    height: calc(100vw - 100px);
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-}
-
 .container {
     width: 100%;
     max-width: 1170px;
@@ -34,5 +27,6 @@ body {
 @import "./components/slider.scss";
 @import "./components/categories.scss";
 @import "./components/products.scss";
+@import "./components/footer.scss";
 
 /* Admin panel */

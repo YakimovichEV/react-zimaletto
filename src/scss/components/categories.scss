@@ -1,33 +1,33 @@
 @import "./variables.scss";
 
-.slick-slide div {
-    width: 30px !important;
-}
-
-.slick-prev {
-    display: none !important;
-}
-
-.slick-next {
-    z-index: 100;
-    background: none !important;
-
-    &:before {
-        content: "→";
-        color: $black !important;
-    }
-}
-
 .categories {
-    &__title {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 23.3333px;
-        line-height: 28px;
-        color: #4f4f4f;
+    padding: 20px 0;
 
-        span.active {
-            color: $green;
+    &__content {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 23px;
+                    line-height: 28px;
+                    color: #4f4f4f;
+                    text-decoration: none;
+
+                    &.active {
+                        background: $green;
+                        border-radius: 25px;
+                        padding: 10px 25px 10px 25px;
+                        color: $white;
+                    }
+                }
+            }
         }
     }
 }

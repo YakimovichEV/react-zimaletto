@@ -1,35 +1,44 @@
 @import "./variables.scss";
 
 .products {
-    padding-top: 50px;
+    padding-top: 40px;
 
     &__inner {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
     }
 
     &__item {
-        margin: 0 10px;
-        width: 31%;
+        width: 320px;
+        margin-bottom: 56px;
     }
 
     &__img {
-        margin-bottom: 5px;
+        background-image: url(../../assets/img/shirt.jpg);
+        background-color: #e6e6e6;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        height: 400px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__title {
         a {
-            margin-bottom: 10px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
+            margin: 12px 0 5px;
+            display: block;
+            font-weight: 700;
+            font-size: 18px;
             line-height: 22px;
-            color: #000000;
+            color: #333;
             text-decoration: none;
-            cursor: pointer;
-            transition: $duration linear;
+            transition: $duration;
 
             &:hover {
                 color: $green;
@@ -38,36 +47,55 @@
     }
 
     &__description {
-        margin-bottom: 5px;
-        font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 19px;
-        color: #000000;
+        color: #000;
+    }
+
+    &__rating {
+        span {
+            background: url(../../assets/img/empty-star.svg);
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            &.active {
+                background: url(../../assets/img/star.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
     }
 
     &__price {
-        margin: 5px 0;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18.1056px;
-        line-height: 23px;
-        color: #000000;
+        b {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+            color: #000;
+            margin-right: 18px;
+        }
     }
 
-    &__btn {
-        margin-bottom: 50px;
-        width: 140.32px;
-        height: 38.02px;
-        background: #00ac4e;
-        border-radius: 4.52641px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18.1056px;
-        line-height: 14px;
-        color: #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &__to-cart {
+        a {
+            margin-top: 13px;
+            width: 140px;
+            height: 38px;
+            background: $green;
+            border-radius: 5px;
+            line-height: 38px;
+            text-align: center;
+            font-size: 18px;
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
 }
