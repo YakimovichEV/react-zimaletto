@@ -17,23 +17,24 @@ export const Header = () => {
                                 <img src={headerLogo} alt="" />
                             </div>
                         </Link>
+
                         <nav className="header__menu">
                             <ul>
-                                <Link to="/">
+                                <Link to="/" className="header__link">
                                     <li>
-                                        <a href="">Каталог</a>
+                                        <span>Каталог</span>
                                     </li>
                                 </Link>
-                                <Link to="/delivery">
+                                <Link to="/delivery" className="header__link">
                                     <li>
-                                        <a href="">Доставка</a>
+                                        <span>Доставка</span>
                                     </li>
                                 </Link>
                                 <li>
-                                    <a href="">Оплата</a>
+                                    <span>Оплата</span>
                                 </li>
                                 <li>
-                                    <a href="">Контакты</a>
+                                    <span>Контакты</span>
                                 </li>
                             </ul>
                         </nav>

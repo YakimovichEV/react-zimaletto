@@ -21,7 +21,7 @@
             li {
                 list-style-type: none;
 
-                a {
+                span {
                     margin: 0 10px;
                     font-style: normal;
                     font-weight: 500;
@@ -30,7 +30,6 @@
                     color: #333;
                     padding: 0 22px;
                     transition: $duration linear;
-                    text-decoration: none;
 
                     &:hover {
                         color: $green;
@@ -38,6 +37,10 @@
                 }
             }
         }
+    }
+
+    &__link {
+        text-decoration: none;
     }
 
     &__logo {
