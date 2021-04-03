@@ -5,10 +5,10 @@ import arrow from "../assets/img/payment-arrow.svg";
 
 export const Payment = () => {
     return (
-        <section className="delivery">
+        <section className="payment">
             <div className="container">
-                <h1 className="delivery__title">Оплата</h1>
-                <div className="delivery__content">
+                <h1 className="payment__title">Оплата</h1>
+                <div className="payment__content">
                     <p>
                         Нашим гостям мы предлагаем жаркую парилку, разогретую до
                         оптимального температурного режима и душистые веники.
@@ -37,11 +37,11 @@ export const Payment = () => {
                         одновременное посещение 25 человек.
                     </p>
                 </div>
-                <div className="delivery__btn">
-                    <Link to="/" className="delivery__link">
+                <div className="payment__btn">
+                    <Link to="/" className="payment__link">
                         <span className="btn-left">В каталог</span>
                     </Link>
-                    <Link to="/delivery" className="delivery__link">
+                    <Link to="/delivery" className="payment__link">
                         <span className="btn-right">
                             О доставке <img src={arrow} alt="" />
                         </span>
