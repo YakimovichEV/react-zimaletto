@@ -30,9 +30,12 @@ export const Header = () => {
                                         <span>Доставка</span>
                                     </li>
                                 </Link>
-                                <li>
-                                    <span>Оплата</span>
-                                </li>
+                                <Link to="/payment" className="header__link">
+                                    <li>
+                                        <span>Оплата</span>
+                                    </li>
+                                </Link>
+
                                 <li>
                                     <span>Контакты</span>
                                 </li>

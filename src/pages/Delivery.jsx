@@ -41,9 +41,11 @@ const Delivery = () => {
                     <Link to="/" className="delivery__link">
                         <span className="btn-left">В каталог</span>
                     </Link>
-                    <span className="btn-right">
-                        Об оплате <img src={arrow} alt="" />
-                    </span>
+                    <Link to="/payment" className="delivery__link">
+                        <span className="btn-right">
+                            Об оплате <img src={arrow} alt="" />
+                        </span>
+                    </Link>
                 </div>
             </div>
         </section>

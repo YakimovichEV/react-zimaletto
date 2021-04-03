@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer/Footer";
 import Delivery from "./pages/Delivery";
 
 import { Home } from "./pages/Home";
+import { Payment } from "./pages/Payment";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <div className="content">
                 <Route path="/" component={Home} exact />
                 <Route path="/delivery" component={Delivery} exact />
+                <Route path="/payment" component={Payment} exact />
             </div>
             <Footer />
         </div>
