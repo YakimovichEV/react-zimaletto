@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import productsImg from "../../assets/img/products.png";
 
@@ -30,7 +31,9 @@ export const Products = () => {
                             <b>3200 ₽</b>
                         </div>
                         <div className="products__to-cart">
-                            <a href="">В корзину</a>
+                            <Link to="/cart" className="products__link">
+                                <span>В корзину</span>
+                            </Link>
                         </div>
                     </div>
                 </div>

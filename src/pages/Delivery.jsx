@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import arrow from "../assets/img/payment-arrow.svg";
 
-const Delivery = () => {
+export const Delivery = () => {
     return (
         <section className="delivery">
             <div className="container">
@@ -51,5 +51,3 @@ const Delivery = () => {
         </section>
     );
 };
-
-export default Delivery;

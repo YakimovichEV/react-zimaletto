@@ -80,7 +80,7 @@
     }
 
     &__to-cart {
-        a {
+        span {
             margin-top: 13px;
             width: 140px;
             height: 38px;
@@ -97,5 +97,9 @@
                 text-decoration: none;
             }
         }
+    }
+
+    &__link {
+        text-decoration: none;
     }
 }
