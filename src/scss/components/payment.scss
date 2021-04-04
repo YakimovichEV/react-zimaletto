@@ -1,0 +1,55 @@
+@import "./variables.scss";
+
+.payment {
+    padding: 45px 0 60px;
+
+    &__title {
+        margin-bottom: 25px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        color: $black;
+    }
+
+    &__content {
+        p {
+            margin-bottom: 40px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 26px;
+            color: #828282;
+        }
+    }
+
+    &__btn {
+        .btn-left {
+            margin-right: 60px;
+            padding: 12px 25px;
+            width: 167px;
+            height: 53px;
+            background: #00ac4e;
+            border-radius: 7px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 21px;
+            text-align: center;
+            color: $white;
+        }
+
+        .btn-right {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 23px;
+            line-height: 29px;
+            text-align: center;
+            color: $black;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+}

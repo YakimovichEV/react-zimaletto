@@ -1,0 +1,15 @@
+@import "./variables.scss";
+
+.cart {
+    padding: 50px 0 60px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        width: 40%;
+    }
+}
