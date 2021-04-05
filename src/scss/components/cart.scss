@@ -3,6 +3,15 @@
 .cart {
     padding: 50px 0 60px;
 
+    &__title {
+        margin-bottom: 5px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 50px;
+        color: #333333;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -10,6 +19,57 @@
     }
 
     &__item {
-        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1.5px solid #ebebeb;
+        border-bottom: 1.5px solid #ebebeb;
+        height: 150px;
+
+        &:last-child {
+            display: block;
+        }
+    }
+
+    &__img {
+        img {
+            margin: 0 28px 0 15px;
+        }
+    }
+
+    &__name {
+        margin-right: 75px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+    }
+
+    &__count {
+        display: flex;
+        align-items: center;
+
+        img {
+            cursor: pointer;
+        }
+
+        span {
+            margin: 0 8px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
+        }
+    }
+
+    &__price {
+        margin-left: 65px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
     }
 }
