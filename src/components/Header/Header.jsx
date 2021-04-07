@@ -10,23 +10,10 @@ import headerPerson from "../../assets/img/person.svg";
 import headerCart from "../../assets/img/shopping-cart.svg";
 
 export const Header = () => {
-    const [modal, setModal] = useState({
-        modal1: false,
-        modal2: false,
-    });
+    const [showModal, setshowModal] = useState(false);
 
-    const modalState = () => {
-        setModal({
-            ...modal,
-            modal1: true,
-        });
-    };
-
-    const modalClose = () => {
-        setModal({
-            ...modal,
-            modal1: false,
-        });
+    const openModal = () => {
+        setshowModal((prev) => !prev);
     };
 
     return (
@@ -69,16 +56,14 @@ export const Header = () => {
                             <img src={headerPhone} alt="" />
                             <span>+7 (831) 282-60-00</span>
                         </div>
-                        <button className="header__user" onClick={modalState}>
-                            <Modal
-                                title={"Modal title"}
-                                isOpened={modal.modal1}
-                                onModalClose={modalClose}
-                            >
-                                asd
-                            </Modal>
+                        <button className="header__user" onClick={openModal}>
                             <img src={headerPerson} alt="" />
                         </button>
+                        <Modal
+                            showModal={showModal}
+                            setshowModal={setshowModal}
+                        />
+
                         <div className="header__cart">
                             <img src={headerCart} alt="" />
                         </div>

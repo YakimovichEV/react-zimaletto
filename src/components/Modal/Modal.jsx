@@ -1,19 +1,16 @@
 import React from "react";
 
-export const Modal = (props) => {
+export const Modal = ({ showModal, setshowModal }) => {
     return (
-        <div
-            className={`modal__wrapper ${props.isOpened ? "open" : "close"}`}
-            style={{ ...props.style }}
-        >
-            <div className="modal__body">
-                <div className="modal__close" onClick={props.onModalClose}>
-                    &#xD7;
+        <>
+            {showModal ? (
+                <div className="modal">
+                    <div className="modal__inner">
+                        <div className="modal__item">1</div>
+                        <div className="modal__item">2</div>
+                    </div>
                 </div>
-                <h2>{props.title}</h2>
-                <hr />
-                {props.children}
-            </div>
-        </div>
+            ) : null}
+        </>
     );
 };
