@@ -64,9 +64,11 @@ export const Header = () => {
                             setshowModal={setshowModal}
                         />
 
-                        <div className="header__cart">
-                            <img src={headerCart} alt="" />
-                        </div>
+                        <Link to="/cart">
+                            <div className="header__cart">
+                                <img src={headerCart} alt="" />
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>
