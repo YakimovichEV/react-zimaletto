@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
     return (
@@ -47,8 +48,13 @@ export const Footer = () => {
                 </div>
                 <div className="footer__bottom">
                     <span>©2021. «Zimaletto»</span>
-                    <a href="">Условия и соглашения</a>
-                    <a href="">Политика конфиденциальности</a>
+                    <Link to="/terms-conditions">
+                        <a href="">Условия и соглашения</a>
+                    </Link>
+
+                    <Link to="/confidentiality-policy">
+                        <a href="">Политика конфиденциальности</a>
+                    </Link>
                 </div>
             </div>
         </footer>
