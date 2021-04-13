@@ -12,9 +12,11 @@ export const Products = () => {
                         <div className="products__img">
                             <img src={productsImg} alt="product" />
                         </div>
-                        <div className="products__title">
-                            <a href="">Футболка Ralph Lauren</a>
-                        </div>
+                        <Link to="/product" className="products__link">
+                            <div className="products__title">
+                                <a href="">Футболка Ralph Lauren</a>
+                            </div>
+                        </Link>
                         <p class="products__description">
                             Эта хлопковая футболка, выстиранная для создания
                             идеального лаконичного вида, - незаменимая вещь, к
@@ -31,8 +33,8 @@ export const Products = () => {
                             <b>3200 ₽</b>
                         </div>
                         <div className="products__to-cart">
-                            <Link to="/cart" className="products__link">
-                                <span>В корзину</span>
+                            <Link to="/product" className="products__link">
+                                <span>О товаре</span>
                             </Link>
                         </div>
                     </div>

@@ -10,6 +10,7 @@ import { Payment } from "./pages/Payment";
 import { Cart } from "./pages/Cart";
 import { TermsConditions } from "./pages/TermsConditions";
 import { ConfidentialityPolicy } from "./pages/ConfidentialityPolicy";
+import { Product } from "./pages/Product";
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                     component={ConfidentialityPolicy}
                     exact
                 />
+                <Route path="/product" component={Product} exact />
             </div>
             <Footer />
         </div>
