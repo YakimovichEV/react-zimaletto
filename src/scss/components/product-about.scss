@@ -1,4 +1,191 @@
 @import "./variables.scss";
 
 .product-about {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__info {
+        width: 60%;
+
+        .nav-tabs {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: none;
+            margin-bottom: 20px;
+
+            .nav-link {
+                font-size: 26px;
+                line-height: 19px;
+                font-weight: 400;
+                color: $black;
+                border: none;
+                padding: 0;
+            }
+
+            li {
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .tab-content {
+            > .tab-pane {
+                padding: 0;
+                position: relative;
+
+                .product_ul {
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        list-style: none;
+                        font-style: normal;
+                        font-size: 18px;
+                        line-height: 36px;
+                        color: #828282;
+
+                        b {
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                h2.tab {
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 19px;
+                    color: #000;
+                    margin-bottom: 22px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #828282;
+                    padding-right: 35px;
+                }
+            }
+        }
+    }
+
+    &__sidebar {
+        width: 30%;
+        background: #fff;
+        box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.06);
+        border-radius: 15px;
+        padding: 30px;
+
+        .title,
+        .line {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 17px;
+            color: #000;
+        }
+
+        .line {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 15px;
+            }
+        }
+
+        .range-slide {
+            width: 60%;
+            margin-top: 32px;
+            margin-left: 15px;
+            margin-right: 39px;
+
+            .range-line {
+                width: 100%;
+                height: 3px;
+                background: #f2f2f2;
+                border-radius: 2px;
+                position: relative;
+
+                &:before {
+                    content: attr(data-mins);
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #000;
+                    position: absolute;
+                    top: -5px;
+                    left: -15px;
+                }
+
+                &:after {
+                    content: attr(data-maxs);
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #000;
+                    position: absolute;
+                    top: -5px;
+                    right: -39px;
+                }
+
+                .green-line {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: $green;
+                    border-radius: 3px;
+                    height: 100%;
+                }
+
+                .round {
+                    width: 12px;
+                    height: 12px;
+                    background: $green;
+                    border: 2px solid #fff;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -4px;
+                    left: 33%;
+                    transform: translateX(-50%);
+
+                    &:before {
+                        content: attr(data-min);
+                        font-weight: 500;
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: #000;
+                        position: absolute;
+                        top: -20px;
+                        left: 0;
+                        width: 200px;
+                        transform: translateX(-23%);
+                    }
+                }
+            }
+
+            .range-text {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 20px;
+                color: #000;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    }
 }
