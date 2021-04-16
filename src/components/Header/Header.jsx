@@ -44,10 +44,11 @@ export const Header = () => {
                                         <span>Оплата</span>
                                     </li>
                                 </Link>
-
-                                <li>
-                                    <span>Контакты</span>
-                                </li>
+                                <Link to="/contacts" className="header__link">
+                                    <li>
+                                        <span>Контакты</span>
+                                    </li>
+                                </Link>
                             </ul>
                         </nav>
                     </div>

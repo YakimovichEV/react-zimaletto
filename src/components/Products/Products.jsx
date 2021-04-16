@@ -9,10 +9,11 @@ export const Products = () => {
             <div className="container">
                 <div className="products__inner">
                     <div className="products__item">
-                        <div className="products__img">
-                            <img src={productsImg} alt="product" />
-                        </div>
                         <Link to="/product" className="products__link">
+                            <div className="products__img">
+                                <img src={productsImg} alt="product" />
+                            </div>
+
                             <div className="products__title">
                                 <a href="">Футболка Ralph Lauren</a>
                             </div>

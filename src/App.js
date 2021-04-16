@@ -7,6 +7,7 @@ import { Footer } from "./components/Footer/Footer";
 import { Home } from "./pages/Home";
 import { Delivery } from "./pages/Delivery";
 import { Payment } from "./pages/Payment";
+import { Contacts } from "./pages/Contacts";
 import { Cart } from "./pages/Cart";
 import { TermsConditions } from "./pages/TermsConditions";
 import { ConfidentialityPolicy } from "./pages/ConfidentialityPolicy";
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/" component={Home} exact />
                 <Route path="/delivery" component={Delivery} exact />
                 <Route path="/payment" component={Payment} exact />
+                <Route path="/contacts" component={Contacts} exact />
                 <Route path="/cart" component={Cart} exact />
                 <Route
                     path="/terms-conditions"
