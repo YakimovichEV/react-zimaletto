@@ -1,0 +1,58 @@
+@import "./variables.scss";
+
+.confidentiality {
+    padding: 45px 0;
+
+    &__title {
+        h1 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 33px;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__content {
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            color: #333;
+            line-height: 22px;
+            margin: 5px 0;
+        }
+    }
+
+    &__item {
+        ul {
+            margin: 20px 0;
+            li {
+                list-style-type: none;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                color: #333;
+                line-height: 20px;
+                margin: 5px 0;
+
+                &:first-child {
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: underline;
+        color: $black;
+        transition: 0.2s linear;
+        font-weight: bold;
+
+        &:hover {
+            color: $green;
+        }
+    }
+}

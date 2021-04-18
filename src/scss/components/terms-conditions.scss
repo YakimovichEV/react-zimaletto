@@ -1,0 +1,54 @@
+@import "./variables.scss";
+
+.terms {
+    padding: 50px 0;
+
+    &__title {
+        h1 {
+            margin-bottom: 25px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 33px;
+            color: #000000;
+        }
+    }
+
+    &__content {
+        ul {
+            margin-bottom: 20px;
+
+            li {
+                list-style-type: none;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                color: #333;
+                line-height: 20px;
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: underline;
+        color: $black;
+        transition: 0.2s linear;
+        font-weight: bold;
+
+        &:hover {
+            color: $green;
+        }
+    }
+
+    &__item {
+        margin: 20px 0;
+    }
+
+    &__subtitle {
+        li {
+            &:first-child {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
