@@ -1,8 +1,7 @@
 import React from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { Modal } from "../Modal/Modal";
+import { Form } from "../Modal/Form";
 
 import headerLogo from "../../assets/img/logo.svg";
 import headerPhone from "../../assets/img/phone.svg";
@@ -10,12 +9,6 @@ import headerPerson from "../../assets/img/person.svg";
 import headerCart from "../../assets/img/shopping-cart.svg";
 
 export const Header = () => {
-    const [showModal, setshowModal] = useState(false);
-
-    const openModal = () => {
-        setshowModal((prev) => !prev);
-    };
-
     return (
         <div className="header">
             <div className="container">
@@ -57,13 +50,9 @@ export const Header = () => {
                             <img src={headerPhone} alt="" />
                             <span>+7 (831) 282-60-00</span>
                         </div>
-                        <button className="header__user" onClick={openModal}>
+                        <button className="header__user">
                             <img src={headerPerson} alt="" />
                         </button>
-                        <Modal
-                            showModal={showModal}
-                            setshowModal={setshowModal}
-                        />
 
                         <Link to="/cart">
                             <div className="header__cart">
