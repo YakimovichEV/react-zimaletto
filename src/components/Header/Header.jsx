@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { Form } from "../Modal/Form";
+import { Form } from "../Login/Form";
 
 import headerLogo from "../../assets/img/logo.svg";
 import headerPhone from "../../assets/img/phone.svg";
@@ -52,6 +52,7 @@ export const Header = () => {
                         </div>
                         <button className="header__user">
                             <img src={headerPerson} alt="" />
+                            <Form />
                         </button>
 
                         <Link to="/cart">
