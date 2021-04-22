@@ -15,7 +15,7 @@ export const Form = () => {
 
     return (
         <>
-            <div className="form-container">
+            <div className="form-containerr">
                 <span className="close-btn">×</span>
                 <div className="form-content-left">
                     <img src={Img2} alt="spaceship" className="form-img" />
