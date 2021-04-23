@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 
 export const useForm = (callback, validate) => {
@@ -8,7 +7,6 @@ export const useForm = (callback, validate) => {
         password: "",
         password2: "",
     });
-
     const [errors, setErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -21,7 +19,7 @@ export const useForm = (callback, validate) => {
     };
 
     const handleSubmit = (e) => {
-        e.preventsDefault();
+        e.preventDefault();
 
         setErrors(validate(values));
         setIsSubmitting(true);
