@@ -12,24 +12,37 @@
         color: $black;
     }
 
-    &__content {
-        p {
-            margin-bottom: 40px;
-            font-style: normal;
-            font-weight: normal;
+    &__item {
+        margin: 10px 0;
+
+        h2 {
             font-size: 22px;
-            line-height: 26px;
-            color: #828282;
+            margin: 5px 0;
+            color: $black;
+            font-weight: 400;
+        }
+
+        ul {
+            li {
+                line-height: 22px;
+                margin-left: 40px;
+            }
+        }
+
+        a {
+            color: $green;
         }
     }
 
     &__btn {
+        padding-top: 30px;
+
         .btn-left {
             margin-right: 60px;
             padding: 12px 25px;
             width: 167px;
             height: 53px;
-            background: #00ac4e;
+            background: $green;
             border-radius: 7px;
             font-style: normal;
             font-weight: 500;
