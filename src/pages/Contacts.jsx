@@ -7,7 +7,7 @@ export const Contacts = () => {
     return (
         <div>
             <ContactsAboutUs />
-            {/* <ContactsCart /> */}
+            <ContactsCart />
         </div>
     );
 };

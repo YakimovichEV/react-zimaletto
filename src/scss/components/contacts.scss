@@ -4,11 +4,13 @@
 
 .contacts {
     display: flex;
+}
+
+.card__inner {
+    display: flex;
     align-items: center;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -30%);
+    justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 .card {
@@ -21,6 +23,7 @@
     overflow: hidden;
     position: relative;
     margin: 1.5rem;
+    padding-right: 30px;
 }
 
 .card h2 {
